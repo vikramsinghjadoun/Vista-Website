@@ -1,0 +1,301 @@
+/* responsive web-page */
+*{
+  padding:0;
+  margin:0;
+}
+.dark{
+  padding:15px;
+  background: #35424a;
+  color:white;
+  margin-top:10px;
+  margin-bottom:10px;
+}
+.wrapper{}
+.header{
+  display: grid;
+  grid-template-columns:1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+  background-color:#444;
+  border-bottom:3px solid #e8491d ;
+  width: 100%;
+}
+.highlight{
+  color:#e8491d;
+}
+.logo{
+  grid-column:1/3;
+  color:white;
+  margin:10px 0px 12px 20px;
+}
+.list{
+  grid-column: 5/8;
+}
+.nav{
+  float:right;
+  margin:5px;
+}
+.list>div a{
+  text-decoration: none;
+  display:block;
+  color:white;
+  font-size: 14px;
+  font-weight:bolder;
+  font-family: sans-serif;
+  margin-right:20px;
+  margin-top: 12px;
+  padding-top: 6px;
+}
+.list>div a:hover{
+  color:tomato;
+}
+.container{
+  text-align: center;
+  min-height:450px;
+  overflow: hidden;
+  background: url("../image/showcase.jpg") no-repeat 0 -350px;
+  background: 0 -400;
+}
+.content{
+  padding:100px 0px 180px 0px;
+  color:#ffffff;
+  position:relative;
+}
+.content:after{
+  content:"";
+  display:block;
+  clear:both;
+}
+.content p{
+  font-family:sans-serif;
+  line-height: 1.3em;
+}
+.content h1{
+  font-size:41px;
+  line-height: 2em;
+  font-family: arial;
+  padding:60px 0px 0px 0px;
+}
+.content h3{
+  padding-top:10px;
+}
+.banner{
+  background:#222;
+}
+.banner:after{
+  content:"";
+  display:block;
+  clear:both;
+}
+.banner h3{
+  color:white;
+  font-family:arial;
+  font-size:19px ;
+  float:left;
+  margin-top:20px;
+  margin-left:10px;
+  margin-bottom:15px;
+}
+.banner form{
+  float:right;
+  margin-top:20px;
+  margin-right:80px;
+  padding-bottom: 10px;
+}
+.banner input[type="email"]{
+  padding:4px;
+  height:25px;
+  width: 200px;
+  border-radius:4px;
+  border:none;
+}
+.btn{
+  height:25px;
+  border-radius:4px;
+  background-color:#e8491d;
+  border:none;
+  color:white;
+  width:65px;
+}
+.btn:hover{
+  background: orange;
+}
+.section{
+  margin-top:20px;
+  line-height:1.4em;
+}
+.section:after{
+  content: "";
+  display:block;
+  clear:both;
+}
+.section .box{
+  float:left;
+  width:30%;
+  margin:7px;
+  margin-left:5px;
+  text-align: center;
+}
+.section .box img{
+  width:140px;
+}
+.section .box h2{
+  font-size: 28px;
+  font-weight:bolder;
+  padding-top: 10px;
+  margin-top:12px;
+}
+.section .box p{
+  padding-top:10px;
+}
+.footer{
+  background:#e8491d;
+  color:aliceblue;
+  text-align: center;
+}
+.footer p{
+  margin-top:12px;
+  font-size:16px;
+  font-family: arial;
+}
+/* css for login page*/
+.login{
+  width:330px;
+  position:relative;
+  left:50%;
+  top:50%;
+  transform: translate(-50%,10%);
+  background-color: rgba(51,51,51,0.7);
+  }
+.container .content h3{
+  font-size: 35px;
+  margin-top:-110px;
+  font-family: arial;
+}
+.container .content .login input{
+  margin:40px 0px 0px 0px;
+  padding:10px;
+  width:80%;
+  border-radius: 4px;
+}
+.login .btn{
+  margin-bottom: 8px;
+  width:80px;
+}
+.login h5{
+  color:orange ;
+  font-size: 15px;
+}
+/*css for signup page*/
+.signup{
+  width:35%;
+  float:left;
+  padding-top:80px;
+}
+.content #aside{
+  float:right;
+}
+.content #aside div{
+  padding:40px;
+}
+.content #aside h3{
+  color:orangered;
+}
+.content #aside p{
+  padding-top:30px;
+}
+.container .content .signup input{
+  margin:25px 0px 0px 0px;
+  padding:10px;
+  width:80%;
+  border-radius: 4px;
+}
+.signup .btn{
+  margin-bottom: 8px;
+  width:80px;
+}
+
+/*this css for about page*/
+.abt-content{
+}
+.abt-content::after{
+  content:"";
+  display:block;
+  clear:both;
+}
+.about{
+  margin-top:15px;
+  float:left;
+  width:64%
+}
+.about p{
+  padding-top:15px;
+  line-height:1.5em;
+  padding-left:10px;
+}
+#aside{
+  float:right;
+  width:30%;
+  margin:15px 10px 0px 0px;
+}
+#aside p{
+    padding-top:15px;
+    line-height:1.5em;
+}
+#aside h3{
+  font-size:24px;
+}
+ul#services li{
+  list-style:none;
+  padding:20px;
+  border:#cccccc solid 1px;
+  background: #e6e6e6;
+  margin-bottom: 6px;
+}
+.quote input,.quote textarea{
+  width:95%;
+  padding:5px;
+  margin:5px;
+}
+@media(max-width:768px){
+  .header .logo{
+    width:100%;
+    text-align:center;
+    grid-column: 1/7;
+  }
+  .header .list {
+    width:100%;
+    grid-column:1/8;
+    text-align:center;
+
+  }
+  .header .list .nav,.section .box,.abt-content .about,.abt-content #aside{
+    width:100%;
+    text-align:center;
+    float:none;
+  }
+  .content #aside{
+    float:none;
+    width:100%;
+    text-align:center;
+    padding:20px 0px 0px 0px;
+  }
+  .container .content h1{
+    margin-top:18px;
+  }
+  .banner h3,.banner form{
+    float:none;
+    width:100%;
+    text-align:center;
+    padding-top:10px;
+  }
+  .banner{
+    margin-top:-20px;
+  }
+  .banner button,.quote button{
+    display:block;
+    width:100%;
+  }
+  .banner form input[type="email"],.signup {
+    width:100%;
+    margin-bottom:5px;
+  }
+  
